@@ -1,0 +1,16 @@
+version = "2.42.0"
+import os
+
+def deps():
+    print(":: No dependencies required")
+
+def build():
+    os.system(f"curl -L -o git-{version}.tar.gz https://www.kernel.org/pub/software/scm/git/git-{version}.tar.gz")
+    os.system(f"tar -xf git-{version}.tar.gz && cd git-{version} && make -j$(nproc)")
+
+def install():
+    os.system("cd git-2.42.0 && sudo make install")
+
+def postinst():
+    print(":: Documentation:")
+    print("1/1  https://git-scm.com/doc")
