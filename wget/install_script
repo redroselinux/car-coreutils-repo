@@ -1,0 +1,16 @@
+version = "1.21.4"
+import os
+
+def deps():
+    print(":: No dependencies required")
+
+def build():
+    os.system(f"curl -L -o wget-{version}.tar.gz https://ftp.gnu.org/gnu/wget/wget-{version}.tar.gz")
+    os.system(f"tar -xf wget-{version}.tar.gz && cd wget-{version} && ./configure --prefix=/usr && make -j$(nproc)")
+
+def install():
+    os.system("cd wget-1.21.4 && sudo make install")
+
+def postinst():
+    print(":: Documentation:")
+    print("1/1  https://www.gnu.org/software/wget/manual/")
