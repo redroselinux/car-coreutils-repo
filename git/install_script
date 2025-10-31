@@ -1,6 +1,9 @@
 version = "2.42.0"
 import os
 
+def beforeinst():
+    print(":: If you meant vim and it got autocorrected, use main/vim-build or main/vim-bin")
+
 def deps():
     print(":: No dependencies required")
 
