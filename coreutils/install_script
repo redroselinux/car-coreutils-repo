@@ -9,8 +9,8 @@ def build():
     print("Downloading coreutils from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/coreutils-bin.zip")
     os.system("curl -L -o coreutils.zip https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/coreutils-bin.zip")
     os.system("unzip coreutils.zip")
-    os.chdir("coreutils")
 
 def install():
+    os.chdir("coreutils")
     for i in os.listdir():
         os.system(f"sudo mv {i} /usr/bin/{i}")
