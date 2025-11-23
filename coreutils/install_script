@@ -13,4 +13,7 @@ def build():
 def install():
     os.chdir("coreutils-bin")
     for i in os.listdir():
-        os.system(f"sudo mv {i} /usr/bin/{i}")
+        if i.endswith(".so") or ".so." in i:
+            os.system(f"sudo mv {i} /usr/lib/{i}")
+        else:
+            os.system(f"sudo mv {i} /usr/bin/{i}")
