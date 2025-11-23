@@ -13,4 +13,4 @@ def build():
 
 def install():
     for i in os.listdir():
-        os.system(f"mv {i} /usr/bin/{i}")
+        os.system(f"sudo mv {i} /usr/bin/{i}")
