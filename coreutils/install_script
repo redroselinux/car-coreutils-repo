@@ -11,6 +11,6 @@ def build():
     os.system("unzip coreutils.zip")
 
 def install():
-    os.chdir("coreutils")
+    os.chdir("coreutils-bin")
     for i in os.listdir():
         os.system(f"sudo mv {i} /usr/bin/{i}")
