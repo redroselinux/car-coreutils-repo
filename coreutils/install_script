@@ -1,6 +1,7 @@
 version = "9.9"
 
 import os
+import shutil
 
 def beforeinst():
     print(":: Coreutils license: GPL-3.0")
@@ -13,7 +14,10 @@ def build():
 def install():
     os.chdir("coreutils-bin")
     for i in os.listdir():
+        src = os.path.abspath(i)
         if i.endswith(".so") or ".so." in i:
-            os.system(f"sudo mv {i} /usr/lib/{i}")
+            dest = f"/usr/lib/{i}"
         else:
-            os.system(f"sudo mv {i} /usr/bin/{i}")
+            dest = f"/usr/bin/{i}"
+        print(f"Installing {i} -> {dest}")
+        shutil.move(src, dest)
