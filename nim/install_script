@@ -10,7 +10,7 @@ def install():
   os.system("tar -xf nim.tar.xz")
   os.chdir(f"nim-{version}")
   os.chdir("bin")
-  for i in os.listfiles():
+  for i in os.listdir():
     os.system(f"mv {i} /usr/bin/{i}")
 
 def postinst():
