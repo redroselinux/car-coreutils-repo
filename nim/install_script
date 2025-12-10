@@ -8,7 +8,6 @@ def install():
   print("Downloading Nim from https://nim-lang.org/download/nim-2.2.6-linux_x64.tar.xz")
   os.system("curl -s -L -o nim.tar.xz https://nim-lang.org/download/nim-2.2.6-linux_x64.tar.xz")
   os.system("tar -xf nim.tar.xz")
-  os.chdir("nim")
   os.chdir(f"nim-{version}")
   os.chdir("bin")
   for i in os.listfiles():
