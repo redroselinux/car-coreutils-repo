@@ -1,0 +1,19 @@
+version = 2.2.6
+import os
+
+def beforeinst():
+  print("Nim is licensed under the MIT License")
+
+def install():
+  print("Downloading Nim from https://nim-lang.org/download/nim-2.2.6-linux_x64.tar.xz")
+  os.system("curl -s -L -o nim.tar.xz https://nim-lang.org/download/nim-2.2.6-linux_x64.tar.xz")
+  os.system("tar -xf nim.tar.xz")
+  os.chdir("nim")
+  os.chdir(f"nim-{version}")
+  os.chdir("bin")
+  for i in os.listfiles():
+    os.system(f"mv {i} /usr/bin/{i}")
+
+def postinst():
+  print("Optional packages:")
+  print("    nim-doc - manpages for nim")
