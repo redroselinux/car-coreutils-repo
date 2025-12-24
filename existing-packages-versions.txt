@@ -3,3 +3,4 @@ wget=1.21.4
 ncurses=6.5
 coreutils=9.9
 pkg-config=0.29.2
+bash=5.3
