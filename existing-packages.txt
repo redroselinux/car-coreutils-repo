@@ -7,3 +7,4 @@ pkg-config
 bash
 libadwaita
 autoconf
+rust
