@@ -6,3 +6,4 @@ nim
 pkg-config
 bash
 libadwaita
+autoconf
