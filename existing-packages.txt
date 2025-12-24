@@ -4,3 +4,4 @@ ncurses
 coreutils
 nim
 pkg-config
+bash
