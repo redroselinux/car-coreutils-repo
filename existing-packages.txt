@@ -3,4 +3,4 @@ wget
 ncurses
 coreutils
 nim
-pkg-build
+pkg-config
