@@ -1,0 +1,23 @@
+import os
+
+version = "1.5.3"
+car_deps = []
+
+def install():
+    print(":: Downloading libadwaita")
+    os.system("curl -s -L -o /tmp/libadwaita.zip https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/libadwaitaBuild-1.5.3.zip")
+
+    print(":: Extracting libadwaita")
+    os.system("unzip -q /tmp/libadwaita.zip -d /tmp/")
+
+    print(":: Installing (include)")
+    os.makedirs("/usr/include/libadwaita-1", exist_ok=True)
+    os.system("cp -r /tmp/adwaita/include/libadwaita-1/* /usr/include/libadwaita-1/")
+
+    print("              (lib)")
+    os.makedirs("/usr/lib", exist_ok=True)
+    os.system("cp -r /tmp/adwaita/lib/* /usr/lib/")  # use /usr/lib64 if on 64-bit system
+
+    print("              (share)")
+    os.makedirs("/usr/share", exist_ok=True)
+    os.system("cp -r /tmp/adwaita/share/* /usr/share/")
