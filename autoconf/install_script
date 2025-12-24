@@ -1,0 +1,9 @@
+version = "2.71"
+car_deps = []
+
+import os
+
+def install():
+  print(":: Downloading autoconf from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/autoconf-bin")
+  os.system("curl -s -L -o /usr/bin/autoconf https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/autoconf-bin")
+  os.system("chmod +x /usr/bin/autoconf")
