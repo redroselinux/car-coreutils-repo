@@ -8,3 +8,4 @@ bash
 libadwaita
 autoconf
 rust
+make
