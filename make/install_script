@@ -1,0 +1,9 @@
+version = "4.4.1"
+car_deps = []
+
+import os
+
+def install():
+  print(":: Downloading make from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/make-bin")
+  os.system("curl -s -L -o /usr/bin/make https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/make-bin")
+  os.system("chmod +x /usr/bin/make")
