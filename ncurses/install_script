@@ -9,6 +9,3 @@ def build():
 def install():
     import os
     os.system("sudo curl -L https://github.com/redroselinux/car-binary-storage/raw/refs/heads/main/libncursesw.so.6.5 -o /usr/lib/libncursesw.so.6.5")
-
-def postinst():
-    os.system("sudo ldconfig")
