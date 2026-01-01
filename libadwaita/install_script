@@ -3,6 +3,9 @@ import os
 version = "1.5.3"
 car_deps = []
 
+def beforeinst():
+    print(":: libadwaita is licensed under LGPL-3.0-or-later")
+
 def install():
     print(":: Downloading libadwaita")
     os.system("curl -s -L -o /tmp/libadwaita.zip https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/libadwaitaBuild-1.5.3.zip")
