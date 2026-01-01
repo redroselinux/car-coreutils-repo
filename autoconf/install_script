@@ -3,7 +3,10 @@ car_deps = []
 
 import os
 
+def beforeinst():
+    print(":: autoconf is licensed under GPL-3.0-or-later WITH Autoconf-exception-3.0")
+
 def install():
-  print(":: Downloading autoconf from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/autoconf-bin")
-  os.system("curl -s -L -o /usr/bin/autoconf https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/autoconf-bin")
-  os.system("chmod +x /usr/bin/autoconf")
+    print(":: Downloading autoconf from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/autoconf-bin")
+    os.system("curl -s -L -o /usr/bin/autoconf https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/autoconf-bin")
+    os.system("chmod +x /usr/bin/autoconf")
