@@ -3,7 +3,10 @@ car_deps = []
 
 import os
 
+def beforeinst():
+    print(":: bash is licensed under GPL-3.0-or-later")
+
 def install():
-  print(":: Downloading bash from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bash-5.3-bin.zip")
-  os.system("curl -s -L -o /usr/bin/bash https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bash-5.3-bin.zip")
-  os.system("chmod +x /usr/bin/bash")
+    print(":: Downloading bash from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bash-5.3-bin.zip")
+    os.system("curl -s -L -o /usr/bin/bash https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bash-5.3-bin.zip")
+    os.system("chmod +x /usr/bin/bash")
