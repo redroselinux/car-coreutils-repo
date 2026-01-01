@@ -1,10 +1,8 @@
 version = "6.5"
+car_deps = []
 
-def deps():
-    print(":: No dependencies")
-
-def build():
-    print(":: No build required")
+def beforeinst():
+    print(":: ncurses is licensed under MIT")
 
 def install():
     import os
