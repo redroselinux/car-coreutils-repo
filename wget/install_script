@@ -1,8 +1,8 @@
 version = "1.21.4"
 import os
 
-def deps():
-    print(":: No dependencies required")
+def beforeinst():
+    print(":: wget is licensed under GPL-3.0-or-later")
 
 def build():
     os.system(f"curl -L -o wget-{version}.tar.gz https://ftp.gnu.org/gnu/wget/wget-{version}.tar.gz")
