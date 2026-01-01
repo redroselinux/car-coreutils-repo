@@ -3,7 +3,10 @@ car_deps = []
 
 import os
 
+def beforeinst():
+    print(":: pkg-config is licensed under GPL-2.0-or-later")
+
 def install():
-  print(":: Downloading pkg-config from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bin/pkg-config")
-  os.system("curl -s -L -o /usr/bin/pkg-config https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bin/pkg-config")
-  os.system("chmod +x /usr/bin/pkg-config")
+    print(":: Downloading pkg-config from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bin/pkg-config")
+    os.system("curl -s -L -o /usr/bin/pkg-config https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/bin/pkg-config")
+    os.system("chmod +x /usr/bin/pkg-config")
