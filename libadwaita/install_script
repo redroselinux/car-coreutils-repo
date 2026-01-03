@@ -1,5 +1,9 @@
 import os
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 delete_files = [
     # include
     "/usr/include/libadwaita-1",
