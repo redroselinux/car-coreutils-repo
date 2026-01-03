@@ -2,6 +2,7 @@ import os
 
 version = "1.5.3"
 car_deps = []
+description = "Libadwaita GTK library for GNOME applications"
 
 def beforeinst():
     print(":: libadwaita is licensed under LGPL-3.0-or-later")
