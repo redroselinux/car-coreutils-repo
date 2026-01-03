@@ -2,6 +2,10 @@ version = "2.71"
 car_deps = []
 description = "GNU Autoconf is a tool that makes scripts that automatically configure software source code."
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 import os
 
 def beforeinst():
