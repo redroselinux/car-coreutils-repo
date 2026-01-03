@@ -1,6 +1,7 @@
 version = "6.5"
 car_deps = []
 description = "Ncurses library for text-based user interfaces"
+delete_files = ["/usr/lib/libncursesw.so.6.5"]
 
 def beforeinst():
     print(":: ncurses is licensed under MIT")
