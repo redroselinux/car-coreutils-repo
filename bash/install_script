@@ -2,6 +2,10 @@ version = "5.3"
 car_deps = []
 description = "GNU Bash command-line shell"
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 import os
 
 def beforeinst():
