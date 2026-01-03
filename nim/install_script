@@ -1,4 +1,6 @@
 version = "2.2.6"
+description = "Nim programming language compiler and tools"
+
 import os
 
 def beforeinst():
