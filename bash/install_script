@@ -1,5 +1,6 @@
 version = "5.3"
 car_deps = []
+description = "GNU Bash command-line shell"
 
 import os
 
