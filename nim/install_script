@@ -1,6 +1,15 @@
 version = "2.2.6"
 description = "Nim programming language compiler and tools"
-delete_files = ["/usr/bin/nim", "/usr/bin/nimble"]
+delete_files = [
+  "/usr/bin/nim",
+  "/usr/bin/nimble",
+  "/usr/bin/nimgrep",
+  "/usr/bin/nimpretty",
+  "/usr/bin/nimsuggest",
+  "/usr/bin/nimdump",
+  "/usr/bin/nim-gdb",
+  "/usr/bin/atlas",
+]
 
 import os
 
