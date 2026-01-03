@@ -2,6 +2,10 @@ version = "4.4.1"
 car_deps = []
 description = "GNU Make utility for managing build automation"
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 import os
 
 def beforeinst():
