@@ -2,6 +2,7 @@ import os
 
 version = "rustup_wrap"
 car_deps = []
+description = "Rust programming language compiler and tools"
 
 def install():
   print(":: Running rustup")
