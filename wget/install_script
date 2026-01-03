@@ -1,4 +1,6 @@
 version = "1.21.4"
+description = "Wget utility for downloading files from the web"
+
 import os
 
 def beforeinst():
