@@ -1,5 +1,6 @@
 version = "6.5"
 car_deps = []
+description = "Ncurses library for text-based user interfaces"
 
 def beforeinst():
     print(":: ncurses is licensed under MIT")
