@@ -3,6 +3,10 @@ car_deps = []
 description = "Ncurses library for text-based user interfaces"
 delete_files = ["/usr/lib/libncursesw.so.6.5"]
 
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"}
+]
+
 def beforeinst():
     print(":: ncurses is licensed under MIT")
 
