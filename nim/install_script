@@ -1,5 +1,6 @@
 version = "2.2.6"
 description = "Nim programming language compiler and tools"
+delete_files = ["/usr/bin/nim", "/usr/bin/nimble"]
 
 import os
 
