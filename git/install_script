@@ -1,8 +1,6 @@
 version = "2.42.0"
 import os
-
-def deps():
-    print(":: No dependencies required")
+description = "Git distributed version control system"
 
 def build():
     os.system(f"curl -L -o git-{version}.tar.gz https://www.kernel.org/pub/software/scm/git/git-{version}.tar.gz")
