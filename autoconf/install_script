@@ -1,5 +1,6 @@
 version = "2.71"
 car_deps = []
+description = "GNU Autoconf is a tool that makes scripts that automatically configure software source code."
 
 import os
 
