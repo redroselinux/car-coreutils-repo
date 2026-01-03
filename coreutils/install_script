@@ -1,4 +1,5 @@
 version = "9.9"
+description = "GNU Core Utilities for basic system commands"
 
 import os
 import shutil
