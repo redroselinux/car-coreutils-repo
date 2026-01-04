@@ -1,0 +1,34 @@
+version = "78.1"
+description = "International Components for Unicode (ICU) libraries"
+
+delete_files = [
+    "libicudata.so",
+    "libicudata.so.78",
+    "libicudata.so.78.1",
+    "libicui18n.so",
+    "libicui18n.so.78",
+    "libicui18n.so.78.1",
+    "libicuio.so",
+    "libicuio.so.78",
+    "libicuio.so.78.1",
+    "libicutu.so",
+    "libicutu.so.78",
+    "libicutu.so.78.1",
+    "libicuuc.so",
+    "libicuuc.so.78",
+    "libicuuc.so.78.1"
+]
+
+def beforeinst():
+  print("ICU is licensed under the Unicode License")
+
+def install():
+  print(":: Downloading icu from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/icu.tar.xz")
+  os.system("curl -s -L -o icu.tar.xz https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/icu.tar.xz")
+
+  print(":: Extracting icu.tar.xz")
+  os.makedirs("icu", exist_ok=True)
+  os.system("tar -xJf icu.tar.xz -C icu")
+
+  print(":: Installing")
+  os.system("mv icu/* /usr/lib")
