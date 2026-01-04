@@ -9,3 +9,4 @@ autoconf=2.71
 rust=rustup_wrap
 make=4.4.1
 nim=2.2.6
+icu=78.1
