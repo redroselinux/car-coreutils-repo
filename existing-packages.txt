@@ -9,3 +9,4 @@ libadwaita
 autoconf
 rust
 make
+icu
