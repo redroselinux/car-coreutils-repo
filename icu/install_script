@@ -1,22 +1,24 @@
 version = "78.1"
 description = "International Components for Unicode (ICU) libraries"
 
+import os
+
 delete_files = [
-    "libicudata.so",
-    "libicudata.so.78",
-    "libicudata.so.78.1",
-    "libicui18n.so",
-    "libicui18n.so.78",
-    "libicui18n.so.78.1",
-    "libicuio.so",
-    "libicuio.so.78",
-    "libicuio.so.78.1",
-    "libicutu.so",
-    "libicutu.so.78",
-    "libicutu.so.78.1",
-    "libicuuc.so",
-    "libicuuc.so.78",
-    "libicuuc.so.78.1"
+    "/usr/lib/libicudata.so",
+    "/usr/lib/libicudata.so.78",
+    "/usr/lib/libicudata.so.78.1",
+    "/usr/lib/libicui18n.so",
+    "/usr/lib/libicui18n.so.78",
+    "/usr/lib/libicui18n.so.78.1",
+    "/usr/lib/libicuio.so",
+    "/usr/lib/libicuio.so.78",
+    "/usr/lib/libicuio.so.78.1",
+    "/usr/lib/libicutu.so",
+    "/usr/lib/libicutu.so.78",
+    "/usr/lib/libicutu.so.78.1",
+    "/usr/lib/libicuuc.so",
+    "/usr/lib/libicuuc.so.78",
+    "/usr/lib/libicuuc.so.78.1"
 ]
 
 def beforeinst():
