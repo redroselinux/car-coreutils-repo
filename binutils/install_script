@@ -1,0 +1,16 @@
+import os
+
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"},
+]
+
+version = "2.45.1"
+car_deps = []
+
+def build():
+   print("Downloading bin-utils from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/binutils-binaries.tar.gz")
+   os.system("curl -s -L -o binutils.tar.gz https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/binutils-binaries.tar.gz")
+
+def install():
+   print("Installing bin-utils")
+   os.system("tar -xzf binutils.tar.gz -C /usr/bin")
