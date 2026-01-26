@@ -1,0 +1,15 @@
+import os
+
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"},
+]
+
+version = "2.8"
+car_deps = []
+
+def build():
+   pass
+
+def install():
+   print("Downloading patch from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/patch-bin")
+   os.system("curl -s -L -o /usr/bin/patch https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/patch-bin")
