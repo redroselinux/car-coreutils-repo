@@ -10,3 +10,4 @@ autoconf
 rust
 make
 icu
+binutils
