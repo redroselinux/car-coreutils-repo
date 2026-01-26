@@ -3,6 +3,7 @@ import os
 maintainer = [
     {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"},
 ]
+description = "Applies changes to files based on diff/patch files, updating source trees with incremental modifications."
 
 version = "2.8"
 car_deps = []
