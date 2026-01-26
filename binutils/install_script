@@ -3,6 +3,7 @@ import os
 maintainer = [
     {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"},
 ]
+description = "GNU assembler, linker, and binary utilities for creating, inspecting, and manipulating object files."
 
 version = "2.45.1"
 car_deps = []
