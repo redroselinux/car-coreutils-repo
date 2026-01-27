@@ -16,4 +16,4 @@ def build():
 
 def install():
    print("Installing shadow")
-   os.system("tar -xzf shadow.tar.gz -C /usr/bin")
+   os.system("tar -xJf shadow.tar.gz -C /usr/bin")
