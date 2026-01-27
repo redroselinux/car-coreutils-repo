@@ -1,0 +1,19 @@
+import os
+
+maintainer = [
+    {"Name": "Juraj Kollár", "email": "mostypc7@gmail.com", "nick": "mostypc123"},
+]
+
+version = "4.8.1"
+car_deps = []
+
+def beforeinst():
+    print("shadow is licensed under the GNU General Public License version 3 or later")
+
+def build():
+   print("Downloading shadow from https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/shadow-bin.tar.xz")
+   os.system("curl -s -L -o shadow.tar.gz https://github.com/redroselinux/car-coreutils-repo/raw/refs/heads/main/shadow-bin.tar.xz")
+
+def install():
+   print("Installing shadow")
+   os.system("tar -xzf shadow.tar.gz -C /usr/bin")
