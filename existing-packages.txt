@@ -12,3 +12,4 @@ make
 icu
 binutils
 patch
+shadow
