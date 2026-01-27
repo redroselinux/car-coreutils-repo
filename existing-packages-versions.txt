@@ -12,3 +12,4 @@ nim=2.2.6
 icu=78.1
 binutils=2.45.1
 patch=2.8
+shadow=4.8.1
