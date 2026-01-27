@@ -7,6 +7,15 @@ maintainer = [
 version = "4.8.1"
 car_deps = []
 
+delete_files = [
+    "chage", "chpasswd", "chfn", "chsh", "faillog", "gpasswd", 
+    "groupadd", "groupdel", "groupmod", "groupmems", "grpunconv", 
+    "grpconv", "id", "lastlog", "login", "login_nopam", "logoutd", 
+    "newgrp", "newuidmap", "newgidmap", "newusers", "nologin", 
+    "passwd", "pwck", "pwconv", "pwunconv", "su", "sulogin", 
+    "useradd", "userdel", "usermod", "vipw"
+]
+
 def beforeinst():
     print("shadow is licensed under the GNU General Public License version 3 or later")
 
