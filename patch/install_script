@@ -8,6 +8,9 @@ description = "Applies changes to files based on diff/patch files, updating sour
 version = "2.8"
 car_deps = []
 
+def beforeinst():
+    print("patch is licensed under the GNU General Public License version 3 or later")
+
 def build():
    pass
 
